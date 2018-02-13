@@ -1,0 +1,48 @@
+var pass = document.getElementById('pass21').value;
+		alert(pass);
+		var pwd  = document.getElementById('pwd').value;
+		alert(pwd);
+		if(pass == pwd){
+		alert("ok");
+		
+		}else{
+		alert('galat');
+		}
+		
+		
+		
+		
+		function ss(){
+  alert(8);
+  }
+  
+	
+ function reset(){
+ // document.getElementById("tt2").click(); 
+  //var pass=  <?php echo $pass; ?>;
+  var r = confirm("Apakah Anda Yakin Untuk Mereset Data Pemilihan?");
+  if(r == true){
+  var input=prompt("Masukan Password Anda Untuk Mereset data Pemilihan : ");
+  if(input == pass){
+  document.getElementById("rst").submit(); 
+  }else{
+  alert("Password yang anda Masukkan Salah");
+  }
+  }
+  
+  }
+  
+   function save(){
+ // document.getElementById("tt2").click(); 
+  var pass="12345";//<?php echo $pass; ?>;
+  var r = confirm("Apakah Anda Yakin Untuk Merubah Tanggal Pemilihan?");
+  if(r == true){
+  var input=prompt("Masukan Password Untuk Merubah Tanggal Pemilihan : ");
+  if(input == pass){
+  document.getElementById("svt").submit(); 
+  }else{
+  alert("Password yang Nada Masukkan Salah");
+  }
+  }
+  
+  }

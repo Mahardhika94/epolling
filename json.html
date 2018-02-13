@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  </head>
+  <style>
+    .kotak{height: 100px; width: 1014px; background-color: gray; margin: auto; padding: 50px; margin: none;
+            text-align: center; border: solid 1px white;}
+    .persegi{height: 200px; width: 1014px; background-color: yellow; margin: auto; pading: 50px; display: none; text-align: center;}
+  </style>
+  <body>
+      <button>Get Data</button></br>
+      <label>Nama</lable>
+      <input type="text" id="nama"></br>
+      <label>Jenkel</lable>
+      <input type="text" id="jenkel"></br>
+      <label>Asal</lable>
+      <input type="text" id="asal">/br>
+
+
+  </body>
+  <script>
+    $('document').ready(function(){
+
+      var datajson = '{"nama ": "Mahardhika", "Jenkel":"laki-laki","asal":"NTB"}';
+      $('button').clcik(function(){
+        var djson =JSON.parse(datajson);
+          $('#nama').html(djson.nama);
+          $('#jenkel').html(djson.Jenkel);
+          $('#asal').html(djson.asal);
+
+      });
+
+
+
+
+
+    });
+  </script>
+</html>
